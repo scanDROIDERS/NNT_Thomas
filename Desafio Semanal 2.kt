@@ -1,5 +1,6 @@
 
 class User( val name: String, val age: Int)
+
 fun main() {
     val userList = mutableListOf<User>()
     var option: Int
@@ -25,6 +26,10 @@ fun main() {
                 println("Usuario adicionado!")
             }
             2 -> {
+                if (userList.isEmpty()){
+                    println("Lista vazia")
+                    continue
+                }
                 println("Listar usuarios")
                 for (user in userList) {
                     println("|${userList.indexOf(user) + 1}| ${user.name}, ${user.age}")
@@ -41,6 +46,10 @@ fun main() {
                 println("Media das idades dos usuarios e ${average} anos")
             }
             4 -> {
+                if (userList.isEmpty()){
+                    println("Lista vazia")
+                    continue
+                }
                 println("Buscar pelo nome")
                 val nameToSearch = readln()
                 for (user in userList) {
@@ -50,6 +59,10 @@ fun main() {
                 }
             }
             5 -> {
+                if (userList.isEmpty()){
+                    println("Lista vazia")
+                    continue
+                }
                 println("Remover pelo nome")
                 val nameToRemove = readln()
                 for (user in userList) {

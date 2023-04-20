@@ -1,0 +1,8 @@
+1) Para criar um mapa, declaramos ele colocando chaves e valores:
+	val mapa = mapOf("Azul" to "#0000FF", "Verde" to "#00FF7F", "Laranja" to "#D2691E", "Roxo" to "#4B0082")
+2) Para isso utilizamos a função contains(), que retorna true se existir o elemento ou false se não existir:
+	val map = mapOf("Azul" to "#0000FF", "Verde" to "#00FF7F", "Laranja" to "#D2691E", "Roxo" to "#4B0082")
+    	map.contains("Azul")
+3) Para remover um elemento de um mapa, primeiro ele precisa ser mutável,depois passamos a chave dele como argumento da função remove():
+	val map = mutableMapOf("Azul" to "#0000FF", "Verde" to "#00FF7F", "Laranja" to "#D2691E", "Roxo" to "#4B0082")
+    	map.remove("Azul")

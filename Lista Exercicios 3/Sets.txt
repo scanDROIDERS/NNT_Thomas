@@ -1,0 +1,8 @@
+1) Para criar um set de 1 a 5 e preciso apenas declarar:
+	val set = setOf<Int>(1,2,3,4,5)
+2)Para isso utilizamos a função contains(), que retorna true se existir o elemento ou false se não existir:
+	val set = setOf<Int>(1,2,3,4,5)
+    	set.contains(2)
+3)Para remover um elemento de um set, primeiro ele precisa ser mutável, depois passamos o elemento como argumento da função remove():
+	val set = mutableSetOf<Int>(1,2,3,4,5)
+    	set.remove(2)
